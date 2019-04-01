@@ -2,5 +2,6 @@
 {
     public interface IButtonFactory
     {
+        IButton Create();
     }
 }

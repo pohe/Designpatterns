@@ -44,8 +44,10 @@
   <ItemGroup>
     <Compile Include="ButtonFactoryNature.cs" />
     <Compile Include="GUIManager.cs" />
+    <Compile Include="IButton.cs" />
     <Compile Include="IButtonFactory.cs" />
     <Compile Include="IconFactoryIndustrial.cs" />
+    <Compile Include="IIcon.cs" />
     <Compile Include="IIconFactory.cs" />
     <Compile Include="IWindow.cs" />
     <Compile Include="IWindowFactory.cs" />

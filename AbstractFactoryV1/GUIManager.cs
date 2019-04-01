@@ -13,6 +13,8 @@ namespace AbstractFactoryV1
         public GUIManager(IWindowFactory iwf, IButtonFactory ibf, IIconFactory iif)
         {
             // ...
+
+
         }
     }
 

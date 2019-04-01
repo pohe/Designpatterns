@@ -10,14 +10,27 @@ namespace ProxyV1
     {
         static void Main(string[] args)
         {
+            //Første version
+            IRoutePlanner planner = new RoutePlanner();
+            PrepareForPlanning(planner);
+
+            //Anden version - brug af Proxy
             IRoutePlanner plannerProxy = new RoutePlannerProxy();
             PrepareForPlanning(plannerProxy);
 
         }
 
-        private static void PrepareForPlanning(IRoutePlanner plannerProxy)
+        private static void PrepareForPlanning(IRoutePlanner p)
         {
-            throw new NotImplementedException();
+            //We are not sure that we will use the planner
+
+            bool condition = false;
+            if (condition)
+            {
+                PlanningData data = new PlanningData();//load planning data
+                p.CalculatePlan(data);
+            }
+
         }
     }
 }

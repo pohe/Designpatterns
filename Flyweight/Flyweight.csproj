@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7A9318D1-48F0-4ED6-A6D2-414B0918D208}</ProjectGuid>
+    <ProjectGuid>{5BCB5F56-79EC-4CD9-B77E-AC366B05AA12}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>AdapterV1</RootNamespace>
-    <AssemblyName>AdapterV1</AssemblyName>
+    <RootNamespace>Flyweight</RootNamespace>
+    <AssemblyName>Flyweight</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,23 +42,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IplannerFactory.cs" />
-    <Compile Include="PlannerFactoryCh.cs" />
-    <Compile Include="PlanningManager.cs" />
-    <Compile Include="PrettyFastPlannerV24.cs" />
+    <Compile Include="Profile.cs" />
+    <Compile Include="ProfileExtrinsic.cs" />
+    <Compile Include="ProfileFactory.cs" />
+    <Compile Include="ProfileIntrinsic.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReallyFastPlannerAdapter.cs" />
-    <Compile Include="ReallyFastPlannerV16.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\FactoryMethodV2\FactoryMethodV2.csproj">
-      <Project>{1caf30fb-fea0-4968-9704-c698d423fc6a}</Project>
-      <Name>FactoryMethodV2</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
