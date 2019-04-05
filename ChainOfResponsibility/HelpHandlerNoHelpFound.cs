@@ -2,9 +2,23 @@
 {
     internal class HelpHandlerNoHelpFound : IHelpHandler
     {
+
+        public HelpHandlerNoHelpFound(IHelpHandler nextHandler = null)
+        {
+            NextHandler = nextHandler;
+        }
+
+        public IHelpHandler NextHandler { get; set; }
+
+
         public void LookupAndDisplayHelp(Context c)
         {
-            throw new System.NotImplementedException();
+            DisplayHelp();
+        }
+
+        public void DisplayHelp()
+        {
+            // Show website}
         }
     }
 }
