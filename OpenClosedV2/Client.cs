@@ -13,6 +13,12 @@ namespace OpenClosedV2
         {
             _calculator = calculator;
         }
+
+        //public Client()
+        //{ 
+        //    _calculator = new CalculatorV10();
+        //}
+
         public void ProcessData(Data d)
         {
             int result = _calculator.Calculate(d);
