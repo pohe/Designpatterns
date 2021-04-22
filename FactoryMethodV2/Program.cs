@@ -11,7 +11,7 @@ namespace FactoryMethodV2
         static void Main(string[] args)
         {
             PlanningManagerV2 pm = new PlanningManagerV2();
-            pm.ExecutePlanning(GetAvailableTime(), new PlannerFactoryDay());
+            pm.ExecutePlanning(GetAvailableTime(), new PlannerFactoryNight());
 
 
         }

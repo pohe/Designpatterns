@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="CalculatorV10.cs" />
     <Compile Include="CalculatorV11.cs" />
+    <Compile Include="CalculatorV12.cs" />
     <Compile Include="Client.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="Program.cs" />

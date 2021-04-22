@@ -11,7 +11,8 @@ namespace OpenClosedV2
         static void Main(string[] args)
         {
             CalculatorV11 cal = new CalculatorV11();
-            Client c = new Client(cal);
+            CalculatorV12 cal12 = new CalculatorV12();
+            Client c = new Client(cal12);
         }
     }
 }

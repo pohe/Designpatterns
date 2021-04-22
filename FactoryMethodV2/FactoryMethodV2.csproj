@@ -46,6 +46,7 @@
     <Compile Include="IPlanner.cs" />
     <Compile Include="IPlannerFactory.cs" />
     <Compile Include="PlannerFactoryDay.cs" />
+    <Compile Include="PlannerFactoryNight.cs" />
     <Compile Include="PlanningManagerV2.cs" />
     <Compile Include="PlanningData.cs" />
     <Compile Include="PlanningResult.cs" />

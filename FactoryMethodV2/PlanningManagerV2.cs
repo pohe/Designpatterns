@@ -33,6 +33,16 @@ namespace FactoryMethodV2
             WritePlanningResultToDB(result);
         }
 
+        internal void ExecutePlanning(object v, PlannerFactoryNight plannerFactoryNight)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void ExecutePlanning(object v, PlannerFactoryDay plannerFactoryDay)
+        {
+            throw new NotImplementedException();
+        }
+
         private void WritePlanningResultToDB(PlanningResult result)
         {
             throw new NotImplementedException();
